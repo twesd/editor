@@ -1,0 +1,1400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{410d26de-b309-4a30-945b-b81523e836dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\include">
+      <UniqueIdentifier>{fb45ba11-a6e8-44cb-99d9-c670bd78ac4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine">
+      <UniqueIdentifier>{cf6ec7d8-5219-4390-a4bf-09a772883dd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage">
+      <UniqueIdentifier>{559bc917-561d-4995-8b1f-ad6d4aafbee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitInstance">
+      <UniqueIdentifier>{f7bcde06-c439-4b1d-81cb-cfe44d43e090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart">
+      <UniqueIdentifier>{65e2f3a7-3412-4139-8d09-bcc5b13bf3ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\UnitEvent">
+      <UniqueIdentifier>{59f04108-a13e-41a1-b8fb-c409aceb4fb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitGenInstance">
+      <UniqueIdentifier>{f9d6f0cc-783a-4ea9-b7b6-9747522b0bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\Loaders">
+      <UniqueIdentifier>{c19c5a1c-77ca-42f6-a05e-d6408d5ee3f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Controls">
+      <UniqueIdentifier>{8e8e2181-7fda-4ca0-8152-5123d0e6ddc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\UnitExecute">
+      <UniqueIdentifier>{68f8484f-e9c2-4543-ad5c-03e4e763f590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\UnitBreak">
+      <UniqueIdentifier>{5f8cbfda-7efe-4c49-b502-28f54bdbba75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\Paths">
+      <UniqueIdentifier>{ee2dd164-0ac8-4651-a42d-f271a5b78e21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\Debug">
+      <UniqueIdentifier>{b34399f1-b307-43ea-9717-081412ed31c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\UnitSelectSceneNodes">
+      <UniqueIdentifier>{1d06f770-ac8b-4f46-b5e7-d90004707227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\UnitMapping">
+      <UniqueIdentifier>{0c25d28c-e6b5-4de1-9604-87f9e7c1b9d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\DataGetters">
+      <UniqueIdentifier>{5248e405-946f-488a-bef2-bfcc0996a591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\ParserExtensions">
+      <UniqueIdentifier>{17679804-9af7-4605-8568-bd07e5d2e9e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Core">
+      <UniqueIdentifier>{9cd53cc7-34c1-44ff-8eaf-6c3a18d0b177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Core\Animators">
+      <UniqueIdentifier>{25d7103d-43e7-4946-882d-e28713b29d67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Core\Geometry">
+      <UniqueIdentifier>{c6ff9783-f4b4-412b-8d94-481b476281d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Core\Parsers">
+      <UniqueIdentifier>{b8e2e333-9aee-40e1-a6b4-3d1df1a38da0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Core\Scene">
+      <UniqueIdentifier>{a54b3035-7b77-4cfd-b593-54c22c24ccb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Core\TextureLoaders">
+      <UniqueIdentifier>{a394a15a-1b2b-4543-9b77-48473600c179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Core\Xml">
+      <UniqueIdentifier>{e0c63529-1a16-4843-8468-20654627cc76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\UnitModels">
+      <UniqueIdentifier>{aa64d40b-f7e4-4881-82f7-292f2d2f1ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Core\Array">
+      <UniqueIdentifier>{e816dba4-b19d-4709-b781-67feb9d62692}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Modules">
+      <UniqueIdentifier>{c2697c18-c3ba-4ac4-8cb2-07e1c73fea77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitGenInstance\CameraGen">
+      <UniqueIdentifier>{33f17bbb-2762-4378-aa21-b2f777810e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitInstance\CameraBehavior">
+      <UniqueIdentifier>{051b3a40-a0d2-4cd6-a66f-270e0ffdcb3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Sounds">
+      <UniqueIdentifier>{cd270630-b138-4f2a-8438-cce0118feffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\UserSettings">
+      <UniqueIdentifier>{ced695ee-0301-4704-99d4-348a19baa893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Core\Xml\RapidXML">
+      <UniqueIdentifier>{7abd34b6-3edb-4241-86fc-6e8ad0bacd40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Transform">
+      <UniqueIdentifier>{365b0bac-b3e8-4e53-b4fa-2308b1e37bd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Sound">
+      <UniqueIdentifier>{1a1efe01-ac2d-4313-8aeb-4caa1f444549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem">
+      <UniqueIdentifier>{b369dcdf-af15-4bde-912f-5b744855f583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors">
+      <UniqueIdentifier>{f1d32866-4f65-41da-992b-1b8e25f1d597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleEmitters">
+      <UniqueIdentifier>{f53e5787-4ef6-4450-93c9-b8742841be38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Core\ParticleAffectors">
+      <UniqueIdentifier>{b0fa15f0-bb34-48b7-9047-31de8f02921d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\InAppPurchases">
+      <UniqueIdentifier>{bdd797ce-769b-458f-bca1-a338450aba41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Ad">
+      <UniqueIdentifier>{e7ad2b93-4367-42f4-ba52-bf1c708032e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\RateApp">
+      <UniqueIdentifier>{ee278fd1-0891-4134-a358-8640a2fdcdfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Core\ParticleEmmitors">
+      <UniqueIdentifier>{5ab347b8-42e3-4454-9410-7ff8213bf87d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\Flurry">
+      <UniqueIdentifier>{756f28ed-9715-44bb-bea0-6f197bedba39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Engine\TestFlight">
+      <UniqueIdentifier>{beb876d5-4e05-425c-a26e-7f44c93824f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Manager.cpp">
+      <Filter>Source Files\Game\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\StageManager.cpp">
+      <Filter>Source Files\Game\Engine\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\controls\ControlManager.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\controls\ControlButton.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitPart\unitEvent\UnitEventBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitPart\unitEvent\UnitEventControlButton.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitInstance\UnitInstanceBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitInstance\UnitInstanceEnv.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitInstance\UnitInstanceStandard.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitGenInstance\UnitGenInstanceBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitGenInstance\UnitGenInstanceEnv.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitGenInstance\UnitGenInstanceStandard.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\UnitManager.cpp">
+      <Filter>Source Files\Game\Engine\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\loaders\LoaderUnitGenInstance.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitGenInstance\UnitCreationBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitGenInstance\UnitCreationTimer.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\loaders\LoaderBehaviors.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitPart\UnitAnimation.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitPart\UnitParameters.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Controls\LoaderControlManager.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Controls\ControlTapScene.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventControlTapScene.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Paths\PathAnimator.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Paths</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitPart\unitExecute\ExecuteBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteCreateUnit.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteUnit.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMoveToPoint.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParameter.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitPart\UnitAction.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitBreak\UnitActionBreak.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitBreak</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\stage\unitPart\UnitBehavior.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Debug\DebugNode.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Debug\DebugSettings.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Debug\DebugReciver.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Debug\DebugInfo.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitClause.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventTimer.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventDistance.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteSelf.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteExtAction.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExtActionDescription.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteAddNextAction.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteGroup.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitSelectSceneNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeDistance.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitSelectSceneNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteExtParameter.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExprParameter.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMappingTransform.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitMapping\UnitMappingBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitMapping</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitMapping\UnitMappingTransform.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitMapping</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventActionEnd.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteChangeSceneNodeId.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeTapControl.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitSelectSceneNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMoveToSceneNode.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Loaders\LoaderUnitSelectSceneNode.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Loaders\LoaderCommon.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeData.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitSelectSceneNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitBlockAction.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteSetData.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\DataGetters\DataGetterBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\DataGetters</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\DataGetters\DataGetterTapControl.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\DataGetters</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Loaders\LoaderDataGetters.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitActionUpdater.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Paths\PathSceneNodeAnimator.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Paths</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventSelection.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Controls\ControlBehavior.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Controls\ControlImage.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\ParserExtensions\ParserExtensionControls.cpp">
+      <Filter>Source Files\Game\Engine\ParserExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\ParserExtensions\ParserExtensionUnits.cpp">
+      <Filter>Source Files\Game\Engine\ParserExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Base.cpp">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Event.cpp">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Parameter.cpp">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Reciver.cpp">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\UserSettings.cpp">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Animators\LineAnimator.cpp">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Animators\RotateAnimator.cpp">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Animators\ScaleAnimator.cpp">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Animators\SplineAnimator.cpp">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Animators\TextureAnimator.cpp">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Geometry\Circle.cpp">
+      <Filter>Source Files\Game\Engine\Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Geometry\Spline.cpp">
+      <Filter>Source Files\Game\Engine\Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\TextureLoaders\CPVRImage.cpp">
+      <Filter>Source Files\Game\Engine\Core\TextureLoaders</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\TextureLoaders\PVRTextureLoader.cpp">
+      <Filter>Source Files\Game\Engine\Core\TextureLoaders</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Scene\Billboard.cpp">
+      <Filter>Source Files\Game\Engine\Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Scene\SceneText.cpp">
+      <Filter>Source Files\Game\Engine\Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Scene\UVAnimatedPlane.cpp">
+      <Filter>Source Files\Game\Engine\Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Parsers\ParserExpression.cpp">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteScript.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventOperator.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelAnim.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelBillboard.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Controls\ControlText.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Paths\PathFinder.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Paths</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Array\SceneNodeArray.cpp">
+      <Filter>Source Files\Game\Engine\Core\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Scene\PolylineSceneNode.cpp">
+      <Filter>Source Files\Game\Engine\Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Xml\XMLCache.cpp">
+      <Filter>Source Files\Game\Engine\Core\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeId.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitSelectSceneNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\DataGetters\DataGetterId.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\DataGetters</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\DataGetters\DataGetterDistance.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\DataGetters</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitCreationDistance.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelSphere.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventScript.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventChildUnit.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Parsers\ParserAS.cpp">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\ModuleManager.cpp">
+      <Filter>Source Files\Game\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="game\Modules\ModuleStandardControl.cpp">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Parsers\ScriptCache.cpp">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Parsers\Scriptstdstring.cpp">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Parsers\Scriptvector3df.cpp">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Parsers\Scriptarray.cpp">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\ParserExtensions\ParserExtensionCommon.cpp">
+      <Filter>Source Files\Game\Engine\ParserExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Controls\ControlCircle.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventControlCircle.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitInstance\UnitInstanceCamera.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceCamera.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance\CameraGen</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenFollowToNode.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance\CameraGen</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenStatic.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance\CameraGen</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance\CameraBehavior</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorFollowToNode.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance\CameraBehavior</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorStatic.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance\CameraBehavior</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitInstance\UnitInstanceEmpty.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceEmpty.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventAnimation.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\GeometryWorker.cpp">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Controls\ControlPanel.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Controls\ControlComponentScroll.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\Modules\ModuleFightControl.cpp">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="game\Modules\ModuleMainMenu.cpp">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="game\Modules\ModuleTutorial1.cpp">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelEmpty.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Sounds\SoundManager.cpp">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Sounds\SoundSource.cpp">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\UserSettings\UserSettingsWorker.cpp">
+      <Filter>Source Files\Game\Engine\UserSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Sounds\SoundResources.cpp">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Sounds\WavFileReader.cpp">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Xml\XMLFileDocument.cpp">
+      <Filter>Source Files\Game\Engine\Core\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Xml\XMLHelper.cpp">
+      <Filter>Source Files\Game\Engine\Core\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\FileUtility.cpp">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="game\Modules\ModuleEndGame.cpp">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMaterial.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteRotation.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTextures.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTransform.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteSound.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParticleAffector.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParticleEmitter.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelParticleSystem.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorAllDirection.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorEmmiterParam.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorFadeOut.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleEmitterBase.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleEmitters</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleEmitterBox.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleEmitters</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\ParticleAffectors\ParticleAffectorAllDirection.cpp">
+      <Filter>Source Files\Game\Engine\Core\ParticleAffectors</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\ParticleAffectors\ParticleAffectorEmmiterParam.cpp">
+      <Filter>Source Files\Game\Engine\Core\ParticleAffectors</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorRotation.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorScale.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteColor.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Animators\ColorAnimator.cpp">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\ParticleAffectors\ParticleAffectorColor.cpp">
+      <Filter>Source Files\Game\Engine\Core\ParticleAffectors</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\ParticleAffectors\ParticleAffectorScale.cpp">
+      <Filter>Source Files\Game\Engine\Core\ParticleAffectors</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelVolumeLight.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\InAppPurchases\InAppPurchases.cpp">
+      <Filter>Source Files\Game\Engine\InAppPurchases</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Ad\AdManager.cpp">
+      <Filter>Source Files\Game\Engine\Ad</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitCreationGlobalParameters.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\RateApp\RateAppManager.cpp">
+      <Filter>Source Files\Game\Engine\RateApp</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Sounds\SoundMusic.cpp">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </ClCompile>
+    <ClCompile Include="game\Modules\ModuleHelper.cpp">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="game\Modules\ModuleTranslate.cpp">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Paths\FinderGrid.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Paths</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitCreationBBox.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\Modules\ModuleMarket.cpp">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteUnitsAll.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\Paths\AroundPointFinder.cpp">
+      <Filter>Source Files\Game\Engine\Stage\Paths</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\TimerBase.cpp">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTimer.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClCompile>
+    <ClCompile Include="game\Modules\ModuleTapAndShot.cpp">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="game\Modules\ModuleFly.cpp">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\ParticleEmmitors\ParticleBoxEmitter.cpp">
+      <Filter>Source Files\Game\Engine\Core\ParticleEmmitors</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\Randomizer.cpp">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\NodeWorker.cpp">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Core\TextureWorker.cpp">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitInstance\UnitInstanceBillboard.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceBillboard.cpp">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Controls\ControlLine.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Controls\ControlRect.cpp">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\Flurry\FlurryManager.cpp">
+      <Filter>Source Files\Game\Engine\Flurry</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine\TestFlight\TestFlightManager.cpp">
+      <Filter>Source Files\Game\Engine\TestFlight</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game\include\configureCompile.h">
+      <Filter>Source Files\Game\include</Filter>
+    </ClInclude>
+    <ClInclude Include="game\include\global.h">
+      <Filter>Source Files\Game\include</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Manager.h">
+      <Filter>Source Files\Game\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\StageManager.h">
+      <Filter>Source Files\Game\Engine\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\controls\ControlManager.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\controls\ControlButton.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\controls\IControl.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\controls\ControlEvent.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitPart\unitEvent\UnitEventBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitPart\unitEvent\UnitEventControlButton.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitInstance\UnitInstanceBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitInstance\UnitInstanceEnv.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitInstance\UnitInstanceStandard.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitGenInstance\UnitGenInstanceBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitGenInstance\UnitGenInstanceEnv.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitGenInstance\UnitGenInstanceStandard.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\UnitManager.h">
+      <Filter>Source Files\Game\Engine\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\loaders\LoaderUnitGenInstance.h">
+      <Filter>Source Files\Game\Engine\Stage\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitGenInstance\UnitCreationBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitGenInstance\UnitCreationTimer.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\loaders\LoaderBehaviors.h">
+      <Filter>Source Files\Game\Engine\Stage\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitPart\UnitAnimation.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitPart\UnitParameters.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\LoaderControlManager.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\ControlPackage.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\ControlTapScene.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventControlTapScene.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Paths\PathAnimator.h">
+      <Filter>Source Files\Game\Engine\Stage\Paths</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitPart\unitExecute\ExecuteBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteCreateUnit.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteUnit.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMoveToPoint.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParameter.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitPart\UnitAction.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitBreak\UnitActionBreak.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitBreak</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\stage\unitPart\UnitBehavior.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Debug\DebugNode.h">
+      <Filter>Source Files\Game\Engine\Stage\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Debug\DebugSettings.h">
+      <Filter>Source Files\Game\Engine\Stage\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Debug\DebugReciver.h">
+      <Filter>Source Files\Game\Engine\Stage\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Debug\DebugInfo.h">
+      <Filter>Source Files\Game\Engine\Stage\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitClause.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventTimer.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventDistance.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteSelf.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteExtAction.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExtActionDescription.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteAddNextAction.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteGroup.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitSelectSceneNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeDistance.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitSelectSceneNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteExtParameter.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExprParameter.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMappingTransform.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitMapping\UnitMappingBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitMapping\UnitMappingTransform.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventActionEnd.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteChangeSceneNodeId.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeTapControl.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitSelectSceneNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMoveToSceneNode.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Loaders\LoaderUnitSelectSceneNode.h">
+      <Filter>Source Files\Game\Engine\Stage\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Loaders\LoaderCommon.h">
+      <Filter>Source Files\Game\Engine\Stage\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeData.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitSelectSceneNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitBlockAction.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteSetData.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\DataGetters\DataGetterBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\DataGetters</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\DataGetters\DataGetterTapControl.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\DataGetters</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Loaders\LoaderDataGetters.h">
+      <Filter>Source Files\Game\Engine\Stage\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitActionUpdater.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Paths\PathSceneNodeAnimator.h">
+      <Filter>Source Files\Game\Engine\Stage\Paths</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventSelection.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\ControlBehavior.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\ControlImage.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\ParserExtensions\ParserExtensionControls.h">
+      <Filter>Source Files\Game\Engine\ParserExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\ParserExtensions\ParserExtensionUnits.h">
+      <Filter>Source Files\Game\Engine\ParserExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Base.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Event.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\ICoreNode.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Parameter.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Reciver.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\UserSettings.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Animators\IExtendAnimator.h">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Animators\LineAnimator.h">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Animators\RotateAnimator.h">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Animators\ScaleAnimator.h">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Animators\SplineAnimator.h">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Animators\TextureAnimator.h">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Geometry\Circle.h">
+      <Filter>Source Files\Game\Engine\Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Geometry\Spline.h">
+      <Filter>Source Files\Game\Engine\Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\TextureLoaders\CPVRImage.h">
+      <Filter>Source Files\Game\Engine\Core\TextureLoaders</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\TextureLoaders\PVRTextureLoader.h">
+      <Filter>Source Files\Game\Engine\Core\TextureLoaders</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Scene\Billboard.h">
+      <Filter>Source Files\Game\Engine\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Scene\SceneText.h">
+      <Filter>Source Files\Game\Engine\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Scene\UVAnimatedPlane.h">
+      <Filter>Source Files\Game\Engine\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Parsers\ParserExpression.h">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteScript.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventOperator.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventType.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelAnim.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelBillboard.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\ControlText.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\ManagerEvents.h">
+      <Filter>Source Files\Game\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Paths\PathFinder.h">
+      <Filter>Source Files\Game\Engine\Stage\Paths</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Array\SceneNodeArray.h">
+      <Filter>Source Files\Game\Engine\Core\Array</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Scene\PolylineSceneNode.h">
+      <Filter>Source Files\Game\Engine\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Xml\XMLCache.h">
+      <Filter>Source Files\Game\Engine\Core\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeId.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitSelectSceneNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\DataGetters\DataGetterId.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\DataGetters</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\DataGetters\DataGetterDistance.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\DataGetters</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitCreationDistance.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelSphere.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventScript.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventChildUnit.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Parsers\ParserAS.h">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Parsers\ParserUserData.h">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\ModuleManager.h">
+      <Filter>Source Files\Game\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\IModule.h">
+      <Filter>Source Files\Game\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Modules\ModuleStandardControl.h">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Parsers\ScriptCache.h">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Parsers\Scriptstdstring.h">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Parsers\Scriptvector3df.h">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Parsers\Scriptarray.h">
+      <Filter>Source Files\Game\Engine\Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\ParserExtensions\ParserExtensionCommon.h">
+      <Filter>Source Files\Game\Engine\ParserExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\ControlCircle.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventControlCircle.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitInstance\UnitInstanceCamera.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceCamera.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance\CameraGen</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenFollowToNode.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance\CameraGen</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenStatic.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance\CameraGen</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance\CameraBehavior</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorFollowToNode.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance\CameraBehavior</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorStatic.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance\CameraBehavior</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitInstance\UnitInstanceEmpty.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceEmpty.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventAnimation.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\GeometryWorker.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\ControlPanel.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\ControlComponentScroll.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\IControlComponent.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\include\defs.h">
+      <Filter>Source Files\Game\include</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\StageManagerEvents.h">
+      <Filter>Source Files\Game\Engine\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Modules\ModuleFightControl.h">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Modules\ModuleMainMenu.h">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Modules\ModuleTutorial1.h">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelEmpty.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Sounds\SoundManager.h">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Sounds\ISound.h">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Sounds\SoundSource.h">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\UserSettings\UserSettingsWorker.h">
+      <Filter>Source Files\Game\Engine\UserSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Sounds\SoundResources.h">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Sounds\WavFileReader.h">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Xml\RapidXML\rapidxml.h">
+      <Filter>Source Files\Game\Engine\Core\Xml\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Xml\RapidXML\rapidxml_iterators.h">
+      <Filter>Source Files\Game\Engine\Core\Xml\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Xml\RapidXML\rapidxml_print.h">
+      <Filter>Source Files\Game\Engine\Core\Xml\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Xml\RapidXML\rapidxml_utils.h">
+      <Filter>Source Files\Game\Engine\Core\Xml\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Xml\XMLFileDocument.h">
+      <Filter>Source Files\Game\Engine\Core\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Xml\XMLHelper.h">
+      <Filter>Source Files\Game\Engine\Core\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\FileUtility.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Modules\ModuleEndGame.h">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMaterial.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteRotation.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTextures.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTransform.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteSound.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParticleEmitter.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParticleAffector.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelParticleSystem.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorAllDirection.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorEmmiterParam.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorFadeOut.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleEmitterBase.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleEmitters</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleEmitterBox.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleEmitters</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\ParticleAffectors\ParticleAffectorAllDirection.h">
+      <Filter>Source Files\Game\Engine\Core\ParticleAffectors</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\ParticleAffectors\ParticleAffectorEmmiterParam.h">
+      <Filter>Source Files\Game\Engine\Core\ParticleAffectors</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorRotation.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorScale.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\ParticleSystem\ParticleAffectors</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteColor.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Animators\ColorAnimator.h">
+      <Filter>Source Files\Game\Engine\Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\ParticleAffectors\ParticleAffectorColor.h">
+      <Filter>Source Files\Game\Engine\Core\ParticleAffectors</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\ParticleAffectors\ParticleAffectorScale.h">
+      <Filter>Source Files\Game\Engine\Core\ParticleAffectors</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelVolumeLight.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitModels</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\InAppPurchases\InAppPurchases.h">
+      <Filter>Source Files\Game\Engine\InAppPurchases</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\InAppPurchases\InAppStatus.h">
+      <Filter>Source Files\Game\Engine\InAppPurchases</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Ad\AdManager.h">
+      <Filter>Source Files\Game\Engine\Ad</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitCreationGlobalParameters.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\RateApp\RateAppManager.h">
+      <Filter>Source Files\Game\Engine\RateApp</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Sounds\SoundMusic.h">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Modules\ModuleHelper.h">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Modules\ModuleTranslate.h">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Paths\FinderGrid.h">
+      <Filter>Source Files\Game\Engine\Stage\Paths</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Paths\FinderNode.h">
+      <Filter>Source Files\Game\Engine\Stage\Paths</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitCreationBBox.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\include\Animation.h">
+      <Filter>Source Files\Game\include</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Modules\ModuleMarket.h">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteUnitsAll.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\Paths\AroundPointFinder.h">
+      <Filter>Source Files\Game\Engine\Stage\Paths</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\TimerBase.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTimer.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitPart\UnitExecute</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Modules\ModuleTapAndShot.h">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Modules\ModuleFly.h">
+      <Filter>Source Files\Game\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\ParticleEmmitors\ParticleBoxEmitter.h">
+      <Filter>Source Files\Game\Engine\Core\ParticleEmmitors</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\Randomizer.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\CompareType.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\NodeWorker.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\OperatorType.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Core\TextureWorker.h">
+      <Filter>Source Files\Game\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitInstance\UnitInstanceBillboard.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceBillboard.h">
+      <Filter>Source Files\Game\Engine\Stage\UnitGenInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\ControlLine.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Controls\ControlRect.h">
+      <Filter>Source Files\Game\Engine\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\Flurry\FlurryManager.h">
+      <Filter>Source Files\Game\Engine\Flurry</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine\TestFlight\TestFlightManager.h">
+      <Filter>Source Files\Game\Engine\TestFlight</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="game\engine\Sounds\SoundManager.mm">
+      <Filter>Source Files\Game\Engine\Sounds</Filter>
+    </None>
+    <None Include="game\engine\UserSettings\UserSettingsWorker.mm">
+      <Filter>Source Files\Game\Engine\UserSettings</Filter>
+    </None>
+    <None Include="game\engine\InAppPurchases\InAppPurchases.mm">
+      <Filter>Source Files\Game\Engine\InAppPurchases</Filter>
+    </None>
+    <None Include="game\engine\Ad\AdManager.mm">
+      <Filter>Source Files\Game\Engine\Ad</Filter>
+    </None>
+    <None Include="game\engine\RateApp\RateAppManager.mm">
+      <Filter>Source Files\Game\Engine\RateApp</Filter>
+    </None>
+    <None Include="game\engine\Flurry\FlurryManager.mm">
+      <Filter>Source Files\Game\Engine\Flurry</Filter>
+    </None>
+    <None Include="game\engine\TestFlight\TestFlightManager.mm">
+      <Filter>Source Files\Game\Engine\TestFlight</Filter>
+    </None>
+  </ItemGroup>
+</Project>

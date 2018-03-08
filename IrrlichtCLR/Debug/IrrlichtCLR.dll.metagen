@@ -1,0 +1,148 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly IrrlichtCLR, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class Vertex3dW: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(irr.core.vector3d<float>*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Single Z   'get ' : 
+    Single Y   'get ' : 
+    Single X   'get ' : 
+  Methods:
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    get_Z(): PrivateScope, Public, HideBySig, SpecialName
+    GetVector(vector3d<float>*): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class BoundboxW: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(irr.core.aabbox3d<float>*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Vertex3dW, Vertex3dW): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Vertex3dW MaxPoint 'get ' : 
+    Vertex3dW MinPoint 'get ' : 
+  Methods:
+    get_MinPoint(): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxPoint(): PrivateScope, Public, HideBySig, SpecialName
+    GetBox(aabbox3d<float>*): PrivateScope, Public, HideBySig
+Class BaseW: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(SharedParams_t*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class SceneNodeW: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(irr.scene.ISceneNode*, SharedParams_t*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsExist 'get ' : 
+    Boolean Visible 'get set' : 
+    Int32 FilterId 'get set' : 
+    Int32 Id   'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    get_FilterId(): PrivateScope, Public, HideBySig, SpecialName
+    set_FilterId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+    set_Visible(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_IsExist(): PrivateScope, Public, HideBySig, SpecialName
+    GetNode(): PrivateScope, Public, HideBySig
+    SetDefaultProperty(): PrivateScope, Public, HideBySig
+    SetAnimationSpeed(Single): PrivateScope, Public, HideBySig
+    SetFrameLoop(Int32, Int32): PrivateScope, Public, HideBySig
+    SetLoopMode(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    EnableHalfTransparent(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    GetPosition(): PrivateScope, Public, HideBySig
+    SetPosition(Vertex3dW): PrivateScope, Public, HideBySig
+    GetRotation(): PrivateScope, Public, HideBySig
+    SetRotation(Vertex3dW): PrivateScope, Public, HideBySig
+    GetScale(): PrivateScope, Public, HideBySig
+    SetScale(Vertex3dW): PrivateScope, Public, HideBySig
+    SetMaterialType(Int32): PrivateScope, Public, HideBySig
+    SetTexture(Int32, String): PrivateScope, Public, HideBySig
+    GetBoundBox(): PrivateScope, Public, HideBySig
+    Highlight(): PrivateScope, Public, HideBySig
+    UnHighlight(): PrivateScope, Public, HideBySig
+    AddTransform(Int32, List`1, List`1): PrivateScope, Public, HideBySig
+    ClearTransforms(): PrivateScope, Public, HideBySig
+Class BillboardW: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :SceneNodeW
+    Void .ctor(irr.scene.ISceneNode*, SharedParams_t*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    SetDimension(Single, Single): PrivateScope, Public, HideBySig
+    SetUseUpVector(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    SetUpVector(Vertex3dW): PrivateScope, Public, HideBySig
+    SetUseViewVector(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    SetViewVector(Vertex3dW): PrivateScope, Public, HideBySig
+Class CameraW: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :BaseW
+    Void .ctor(SharedParams_t*, irr.scene.ICameraSceneNode*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Vertex3dW Target 'get set' : 
+    Vertex3dW Position 'get set' : 
+  Methods:
+    ZoomToNode(SceneNodeW): PrivateScope, Public, HideBySig
+    FullZoom(): PrivateScope, Public, HideBySig
+    RotateCamera(Vertex3dW): PrivateScope, Public, HideBySig
+    WheelCamera(Single): PrivateScope, Public, HideBySig
+    MoveCamera(Vertex3dW): PrivateScope, Public, HideBySig
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    set_Position(Vertex3dW): PrivateScope, Public, HideBySig, SpecialName
+    get_Target(): PrivateScope, Public, HideBySig, SpecialName
+    set_Target(Vertex3dW): PrivateScope, Public, HideBySig, SpecialName
+Class ControlsW: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :BaseW
+    Void .ctor(SharedParams_t*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Draw(): PrivateScope, Public, HideBySig
+    Remove(String): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    AddButton(String, String, Vertex3dW): PrivateScope, Public, HideBySig
+    AddText(String, String, Vertex3dW, Int32, Int32): PrivateScope, Public, HideBySig
+    AddRect(Vertex3dW, Int32, Int32, UInt32, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    AddLine(Vertex3dW, Vertex3dW, Int32, UInt32): PrivateScope, Public, HideBySig
+Class SelectorW: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :BaseW
+    Void .ctor(SharedParams_t*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.List`1[SceneNodeW] SelectionResult 'get ' : 
+  Methods:
+    SelectNode(SceneNodeW): PrivateScope, Public, HideBySig
+    SelectNode(Int32, Int32): PrivateScope, Public, HideBySig
+    ClearSelection(): PrivateScope, Public, HideBySig
+    GetNodeByScreenCoords(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    get_SelectionResult(): PrivateScope, Public, HideBySig, SpecialName
+Class IrrDeviceW: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    ControlsW Controls 'get ' : 
+    CameraW Camera 'get ' : 
+    SelectorW Selector 'get ' : 
+  Methods:
+    Close(): PrivateScope, Public, HideBySig
+    DrawAll(): PrivateScope, Public, HideBySig
+    AddSceneNode(String): PrivateScope, Public, HideBySig
+    AddCube(BoundboxW): PrivateScope, Public, HideBySig
+    AddSphere(Single, Int32): PrivateScope, Public, HideBySig
+    AddBillboard(Single, Single): PrivateScope, Public, HideBySig
+    ResizeScreen(Int32, Int32): PrivateScope, Public, HideBySig
+    DeleteSceneNode(SceneNodeW): PrivateScope, Public, HideBySig
+    DeleteSceneNodes(): PrivateScope, Public, HideBySig
+    ScreenCoordToPosition3d(Int32, Int32, Single): PrivateScope, Public, HideBySig
+    Position3dToSceenCoord(Vertex3dW): PrivateScope, Public, HideBySig
+    get_Selector(): PrivateScope, Public, HideBySig, SpecialName
+    get_Camera(): PrivateScope, Public, HideBySig, SpecialName
+    get_Controls(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

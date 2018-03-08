@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{763AF3D5-2D58-4541-A99C-BF8BBA35DC61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonUI</RootNamespace>
+    <AssemblyName>CommonUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\CommonUI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\CommonUI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aga.Controls">
+      <HintPath>..\Library\Aga.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\Library\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonEditorSettings.cs" />
+    <Compile Include="Components\PanelOwnerDraw.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PanelIrr.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlStdProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlStdProperties.Designer.cs">
+      <DependentUpon>ControlStdProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CopyPasteContainer.cs" />
+    <Compile Include="FormDialogGetValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDialogGetValue.Designer.cs">
+      <DependentUpon>FormDialogGetValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewAdv\TreeViewAdvWorker.cs" />
+    <Compile Include="TreeViewAdv\TreeViewConvertor.cs" />
+    <Compile Include="TreeViewAdv\TreeNodeGroup.cs" />
+    <Compile Include="TreeViewAdv\TreeModel.cs" />
+    <Compile Include="TreeViewAdv\TreeNodeBase.cs" />
+    <Compile Include="TreeViewAdv\TreeNodeXref.cs" />
+    <Compile Include="UITypeEditors\ControlEditorScript.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UITypeEditors\ControlEditorScript.designer.cs">
+      <DependentUpon>ControlEditorScript.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITypeEditors\DataGridViewExtension.cs" />
+    <Compile Include="FormDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDialog.Designer.cs">
+      <DependentUpon>FormDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFloatPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFloatPanel.Designer.cs">
+      <DependentUpon>FormFloatPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGetValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGetValue.Designer.cs">
+      <DependentUpon>FormGetValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectObject.Designer.cs">
+      <DependentUpon>FormSelectObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolTip.Designer.cs">
+      <DependentUpon>FormToolTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Parser\TextBoxAutoComplete.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGridReadOnly.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolTipMouse.cs" />
+    <Compile Include="UITypeEditors\ControlEditorScriptFileName.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UITypeEditors\ControlEditorScriptFileName.Designer.cs">
+      <DependentUpon>ControlEditorScriptFileName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITypeEditors\ControlEditorLargeString.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UITypeEditors\ControlEditorLargeString.Designer.cs">
+      <DependentUpon>ControlEditorLargeString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITypeEditors\ControlEditorListItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UITypeEditors\ControlEditorListItems.designer.cs">
+      <DependentUpon>ControlEditorListItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITypeEditors\ControlEditorParameters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UITypeEditors\ControlEditorParameters.Designer.cs">
+      <DependentUpon>ControlEditorParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITypeEditors\UITypeEditorAttributeFileNameFilter.cs" />
+    <Compile Include="UITypeEditors\UITypeEditorFileName.cs" />
+    <Compile Include="UITypeEditors\UITypeEditorParameters.cs" />
+    <Compile Include="UITypeEditors\UITypeEditorScript.cs" />
+    <Compile Include="UITypeEditors\UITypeEditorScriptFileName.cs" />
+    <Compile Include="UITypeEditors\UITypeEditorScriptFileNameModal.cs" />
+    <Compile Include="UITypeEditors\UITypeEditorItem.cs" />
+    <Compile Include="UITypeEditors\UITypeEditorLargeString.cs" />
+    <Compile Include="FormKeysWorker.cs" />
+    <Compile Include="UITypeEditors\UITypeEditorScriptModal.cs" />
+    <Compile Include="UtilImage.cs" />
+    <Compile Include="WindowXmlState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ControlStdProperties.resx">
+      <DependentUpon>ControlStdProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDialogGetValue.resx">
+      <DependentUpon>FormDialogGetValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDialog.resx">
+      <DependentUpon>FormDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFloatPanel.resx">
+      <DependentUpon>FormFloatPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGetValue.resx">
+      <DependentUpon>FormGetValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectObject.resx">
+      <DependentUpon>FormSelectObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolTip.resx">
+      <DependentUpon>FormToolTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITypeEditors\ControlEditorScript.resx">
+      <DependentUpon>ControlEditorScript.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITypeEditors\ControlEditorScriptFileName.resx">
+      <DependentUpon>ControlEditorScriptFileName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITypeEditors\ControlEditorLargeString.resx">
+      <DependentUpon>ControlEditorLargeString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITypeEditors\ControlEditorListItems.resx">
+      <DependentUpon>ControlEditorListItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITypeEditors\ControlEditorParameters.resx">
+      <DependentUpon>ControlEditorParameters.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{2E80130C-8943-4A43-8ED0-6378047ABB79}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Serializable\Serializable.csproj">
+      <Project>{88D5FE46-FD79-4F62-98A5-C18CC28E26C0}</Project>
+      <Name>Serializable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransactionCore\TransactionCore.csproj">
+      <Project>{7076DF58-B571-4611-A357-EFCC4E332A5A}</Project>
+      <Name>TransactionCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XRef.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

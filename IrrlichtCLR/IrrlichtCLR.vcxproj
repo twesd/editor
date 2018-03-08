@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EC70CB86-24AE-4AB4-8915-0D9E1C993B31}</ProjectGuid>
+    <RootNamespace>IrrlichtCLR</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\_Work_\Projects\ENGINE_irrlicht-1.5.1\irrlicht-1.5.1\include;$(ProjectDir);$(ProjectDir)\include;C:\_Work_\Projects\angelscript_2.23.1\angelscript\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\_Work_\Projects\ENGINE_irrlicht-1.5.1\irrlicht-1.5.1\lib\Win32-visualstudio;C:\_Work_\Projects\angelscript_2.23.1\angelscript\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Irrlicht.lib;angelscriptd.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="BaseW.cpp" />
+    <ClCompile Include="BillboardW.cpp" />
+    <ClCompile Include="CameraW.cpp" />
+    <ClCompile Include="ControlsW.cpp" />
+    <ClCompile Include="Controls\ControlBehavior.cpp" />
+    <ClCompile Include="Controls\ControlButton.cpp" />
+    <ClCompile Include="Controls\ControlCircle.cpp" />
+    <ClCompile Include="Controls\ControlComponentScroll.cpp" />
+    <ClCompile Include="Controls\ControlImage.cpp" />
+    <ClCompile Include="Controls\ControlLine.cpp" />
+    <ClCompile Include="Controls\ControlManager.cpp" />
+    <ClCompile Include="Controls\ControlPanel.cpp" />
+    <ClCompile Include="Controls\ControlRect.cpp" />
+    <ClCompile Include="Controls\ControlTapScene.cpp" />
+    <ClCompile Include="Controls\ControlText.cpp" />
+    <ClCompile Include="Core\Animators\ColorAnimator.cpp" />
+    <ClCompile Include="Core\Animators\LineAnimator.cpp" />
+    <ClCompile Include="Core\Animators\RotateAnimator.cpp" />
+    <ClCompile Include="Core\Animators\ScaleAnimator.cpp" />
+    <ClCompile Include="Core\Animators\SplineAnimator.cpp" />
+    <ClCompile Include="Core\Animators\TextureAnimator.cpp" />
+    <ClCompile Include="Core\Base.cpp" />
+    <ClCompile Include="Core\Event.cpp" />
+    <ClCompile Include="Core\FileUtility.cpp" />
+    <ClCompile Include="Core\GeometryWorker.cpp" />
+    <ClCompile Include="Core\Geometry\Circle.cpp" />
+    <ClCompile Include="Core\Geometry\Spline.cpp" />
+    <ClCompile Include="Core\NodeWorker.cpp" />
+    <ClCompile Include="Core\Parameter.cpp" />
+    <ClCompile Include="Core\Parsers\ParserAS.cpp" />
+    <ClCompile Include="Core\Parsers\ParserExpression.cpp" />
+    <ClCompile Include="Core\Parsers\scriptarray.cpp" />
+    <ClCompile Include="Core\Parsers\ScriptCache.cpp" />
+    <ClCompile Include="Core\Parsers\scriptstdstring.cpp" />
+    <ClCompile Include="Core\Parsers\Scriptvector3df.cpp" />
+    <ClCompile Include="Core\Randomizer.cpp" />
+    <ClCompile Include="Core\Reciver.cpp" />
+    <ClCompile Include="Core\Scene\Billboard.cpp" />
+    <ClCompile Include="Core\Scene\PolylineSceneNode.cpp" />
+    <ClCompile Include="Core\Scene\SceneText.cpp" />
+    <ClCompile Include="Core\Scene\UVAnimatedPlane.cpp" />
+    <ClCompile Include="Core\TextureWorker.cpp" />
+    <ClCompile Include="Core\TimerBase.cpp" />
+    <ClCompile Include="Core\UserSettings.cpp" />
+    <ClCompile Include="Core\Xml\XMLCache.cpp" />
+    <ClCompile Include="Core\Xml\XMLFileDocument.cpp" />
+    <ClCompile Include="Core\Xml\XMLHelper.cpp" />
+    <ClCompile Include="IrrDeviceW.cpp" />
+    <ClCompile Include="SceneNodeW.cpp" />
+    <ClCompile Include="SelectorW.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseW.h" />
+    <ClInclude Include="BillboardW.h" />
+    <ClInclude Include="BoundboxW.h" />
+    <ClInclude Include="CameraW.h" />
+    <ClInclude Include="ControlsW.h" />
+    <ClInclude Include="Controls\ControlBehavior.h" />
+    <ClInclude Include="Controls\ControlButton.h" />
+    <ClInclude Include="Controls\ControlCircle.h" />
+    <ClInclude Include="Controls\ControlComponentScroll.h" />
+    <ClInclude Include="Controls\ControlEvent.h" />
+    <ClInclude Include="Controls\ControlImage.h" />
+    <ClInclude Include="Controls\ControlLine.h" />
+    <ClInclude Include="Controls\ControlManager.h" />
+    <ClInclude Include="Controls\ControlPackage.h" />
+    <ClInclude Include="Controls\ControlPanel.h" />
+    <ClInclude Include="Controls\ControlRect.h" />
+    <ClInclude Include="Controls\ControlTapScene.h" />
+    <ClInclude Include="Controls\ControlText.h" />
+    <ClInclude Include="Controls\IControl.h" />
+    <ClInclude Include="Controls\IControlComponent.h" />
+    <ClInclude Include="Convertor.h" />
+    <ClInclude Include="Core\Animators\ColorAnimator.h" />
+    <ClInclude Include="Core\Animators\IExtendAnimator.h" />
+    <ClInclude Include="Core\Animators\LineAnimator.h" />
+    <ClInclude Include="Core\Animators\RotateAnimator.h" />
+    <ClInclude Include="Core\Animators\ScaleAnimator.h" />
+    <ClInclude Include="Core\Animators\SplineAnimator.h" />
+    <ClInclude Include="Core\Animators\TextureAnimator.h" />
+    <ClInclude Include="Core\Base.h" />
+    <ClInclude Include="Core\CompareType.h" />
+    <ClInclude Include="Core\Event.h" />
+    <ClInclude Include="Core\FileUtility.h" />
+    <ClInclude Include="Core\GeometryWorker.h" />
+    <ClInclude Include="Core\Geometry\Circle.h" />
+    <ClInclude Include="Core\Geometry\Spline.h" />
+    <ClInclude Include="Core\ICoreNode.h" />
+    <ClInclude Include="Core\NodeWorker.h" />
+    <ClInclude Include="Core\OperatorType.h" />
+    <ClInclude Include="Core\Parameter.h" />
+    <ClInclude Include="Core\Parsers\ParserAS.h" />
+    <ClInclude Include="Core\Parsers\ParserExpression.h" />
+    <ClInclude Include="Core\Parsers\ParserUserData.h" />
+    <ClInclude Include="Core\Parsers\scriptarray.h" />
+    <ClInclude Include="Core\Parsers\ScriptCache.h" />
+    <ClInclude Include="Core\Parsers\scriptstdstring.h" />
+    <ClInclude Include="Core\Parsers\scriptvector3df.h" />
+    <ClInclude Include="Core\Randomizer.h" />
+    <ClInclude Include="Core\Reciver.h" />
+    <ClInclude Include="Core\Scene\Billboard.h" />
+    <ClInclude Include="Core\Scene\PolylineSceneNode.h" />
+    <ClInclude Include="Core\Scene\SceneText.h" />
+    <ClInclude Include="Core\Scene\UVAnimatedPlane.h" />
+    <ClInclude Include="Core\TextureWorker.h" />
+    <ClInclude Include="Core\TimerBase.h" />
+    <ClInclude Include="Core\UserSettings.h" />
+    <ClInclude Include="Core\Xml\RapidXML\rapidxml.h" />
+    <ClInclude Include="Core\Xml\RapidXML\rapidxml_iterators.h" />
+    <ClInclude Include="Core\Xml\RapidXML\rapidxml_print.h" />
+    <ClInclude Include="Core\Xml\RapidXML\rapidxml_utils.h" />
+    <ClInclude Include="Core\Xml\XMLCache.h" />
+    <ClInclude Include="Core\Xml\XMLFileDocument.h" />
+    <ClInclude Include="Core\Xml\XMLHelper.h" />
+    <ClInclude Include="include\animation.h" />
+    <ClInclude Include="include\configureCompile.h" />
+    <ClInclude Include="include\defs.h" />
+    <ClInclude Include="include\global.h" />
+    <ClInclude Include="SelectorW.h" />
+    <ClInclude Include="Vertex3dW.h" />
+    <ClInclude Include="IrrDeviceW.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SceneNodeW.h" />
+    <ClInclude Include="Stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

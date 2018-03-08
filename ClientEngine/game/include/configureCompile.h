@@ -1,0 +1,17 @@
+﻿#ifndef __3D_H_CONFIGURE_COMPILE_INCLUDED__
+#define __3D_H_CONFIGURE_COMPILE_INCLUDED__
+
+//#define IPHONE_COMPILE
+
+#define WINDOWS_COMPILE
+
+//#define DEMO_VERSION
+//#undef DEMO_VERSION
+
+//#define DEBUG_MESSAGE_PRINT
+//#undef	DEBUG_MESSAGE_PRINT
+
+//#define DEBUG_VISUAL_DATA
+
+
+#endif

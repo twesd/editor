@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{57c52929-d668-4d6c-bd2f-176e928446af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Geometry">
+      <UniqueIdentifier>{246f4c7f-a87b-43a5-b574-1cb862053de1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{e5fd7c44-30b6-4705-9200-050feb6ed27c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{bd7e5b3f-a62d-4191-86b7-a4caca38e382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{26487fa6-1a90-4ca1-a4f7-6ebb5d7e689e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Animators">
+      <UniqueIdentifier>{7862d4ba-a95f-4322-b45f-4e6222adf10c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Geometry">
+      <UniqueIdentifier>{e7d47a1d-3606-490d-a9e5-be7bb4e7e098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Parsers">
+      <UniqueIdentifier>{060a63d9-e9e4-41b6-b54b-8d1647e8b6f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Scene">
+      <UniqueIdentifier>{e48803ad-d579-462e-8240-32946f5d8b99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Xml">
+      <UniqueIdentifier>{ed29b415-e802-4684-a1ba-aae9bfc7558c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IrrDeviceW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneNodeW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectorW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlsW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Base.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Event.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\FileUtility.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GeometryWorker.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\NodeWorker.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Parameter.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Randomizer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Reciver.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TextureWorker.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TimerBase.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UserSettings.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ControlBehavior.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ControlButton.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ControlCircle.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ControlComponentScroll.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ControlImage.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ControlManager.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ControlPanel.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ControlTapScene.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ControlText.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Animators\ColorAnimator.cpp">
+      <Filter>Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Animators\LineAnimator.cpp">
+      <Filter>Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Animators\RotateAnimator.cpp">
+      <Filter>Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Animators\ScaleAnimator.cpp">
+      <Filter>Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Animators\SplineAnimator.cpp">
+      <Filter>Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Animators\TextureAnimator.cpp">
+      <Filter>Core\Animators</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Circle.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Spline.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Xml\XMLCache.cpp">
+      <Filter>Core\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Xml\XMLFileDocument.cpp">
+      <Filter>Core\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Xml\XMLHelper.cpp">
+      <Filter>Core\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Parsers\ParserAS.cpp">
+      <Filter>Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Parsers\ParserExpression.cpp">
+      <Filter>Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Parsers\scriptarray.cpp">
+      <Filter>Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Parsers\ScriptCache.cpp">
+      <Filter>Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Parsers\scriptstdstring.cpp">
+      <Filter>Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Parsers\Scriptvector3df.cpp">
+      <Filter>Core\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Scene\Billboard.cpp">
+      <Filter>Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Scene\PolylineSceneNode.cpp">
+      <Filter>Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Scene\SceneText.cpp">
+      <Filter>Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Scene\UVAnimatedPlane.cpp">
+      <Filter>Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="BillboardW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ControlRect.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ControlLine.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vertex3dW.h">
+      <Filter>Source Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Convertor.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="IrrDeviceW.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneNodeW.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseW.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectorW.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraW.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlsW.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundboxW.h">
+      <Filter>Source Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Base.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CompareType.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Event.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FileUtility.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GeometryWorker.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ICoreNode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\NodeWorker.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\OperatorType.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Parameter.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Randomizer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Reciver.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TextureWorker.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TimerBase.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UserSettings.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\animation.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\configureCompile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\defs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\global.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlBehavior.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlButton.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlCircle.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlComponentScroll.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlEvent.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlImage.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlManager.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlPackage.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlPanel.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlTapScene.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlText.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IControl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IControlComponent.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Animators\ColorAnimator.h">
+      <Filter>Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Animators\IExtendAnimator.h">
+      <Filter>Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Animators\LineAnimator.h">
+      <Filter>Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Animators\RotateAnimator.h">
+      <Filter>Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Animators\ScaleAnimator.h">
+      <Filter>Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Animators\SplineAnimator.h">
+      <Filter>Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Animators\TextureAnimator.h">
+      <Filter>Core\Animators</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Circle.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Spline.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Xml\XMLCache.h">
+      <Filter>Core\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Xml\XMLFileDocument.h">
+      <Filter>Core\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Xml\XMLHelper.h">
+      <Filter>Core\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Xml\RapidXML\rapidxml.h">
+      <Filter>Core\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Xml\RapidXML\rapidxml_iterators.h">
+      <Filter>Core\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Xml\RapidXML\rapidxml_print.h">
+      <Filter>Core\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Xml\RapidXML\rapidxml_utils.h">
+      <Filter>Core\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Parsers\ParserAS.h">
+      <Filter>Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Parsers\ParserExpression.h">
+      <Filter>Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Parsers\ParserUserData.h">
+      <Filter>Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Parsers\scriptarray.h">
+      <Filter>Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Parsers\ScriptCache.h">
+      <Filter>Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Parsers\scriptstdstring.h">
+      <Filter>Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Parsers\scriptvector3df.h">
+      <Filter>Core\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Scene\Billboard.h">
+      <Filter>Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Scene\PolylineSceneNode.h">
+      <Filter>Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Scene\SceneText.h">
+      <Filter>Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Scene\UVAnimatedPlane.h">
+      <Filter>Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="BillboardW.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlRect.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ControlLine.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

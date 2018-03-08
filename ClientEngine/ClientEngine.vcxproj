@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D7C0EFE-ECC7-4E9B-BFE7-E3004CE2BA7F}</ProjectGuid>
+    <RootNamespace>My3DAnimalFight</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>ClientEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)game\include;$(ProjectDir)game\Engine;C:\_Work_\Projects\angelscript_2.23.1\angelscript\include;C:\_Work_\Projects\irrKlang-1.3.0\include;C:\_Work_\Projects\ENGINE_irrlicht-1.5.1\irrlicht-1.5.1\include;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Program Files\OpenAL 1.1 SDK\include;C:\Program Files (x86)\Visual Leak Detector\include;C:\Program Files\Visual Leak Detector\include;E:\__Work__\Projects\angelscript_2.23.1\angelscript\include;E:\__Work__\Projects\ENGINE_irrlicht-1.5.1\irrlicht-1.5.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\_Work_\Projects\angelscript_2.23.1\angelscript\lib;C:\_Work_\Projects\irrKlang-1.3.0\lib\Win32-visualStudio;C:\_Work_\Projects\ENGINE_irrlicht-1.5.1\irrlicht-1.5.1\lib\Win32-visualstudio;C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32;C:\Program Files\OpenAL 1.1 SDK\libs\Win32;C:\Program Files (x86)\Visual Leak Detector\lib\Win32;C:\Program Files\Visual Leak Detector\lib\Win32;E:\__Work__\Projects\angelscript_2.23.1\angelscript\lib;E:\__Work__\Projects\ENGINE_irrlicht-1.5.1\irrlicht-1.5.1\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Irrlicht.lib;irrKlang.lib;angelscriptd.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\__Work__\MainProject\ENGINE_irrlicht-1.5.1\irrlicht-1.5.1\lib\Win32-visualstudio;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>false</Profile>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy "$(ProjectDir)\..\Library\Irrlicht.dll" "$(OutDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientEngine.cpp" />
+    <ClCompile Include="game\engine\Ad\AdManager.cpp" />
+    <ClCompile Include="game\engine\Controls\ControlBehavior.cpp" />
+    <ClCompile Include="game\engine\controls\ControlButton.cpp" />
+    <ClCompile Include="game\engine\Controls\ControlCircle.cpp" />
+    <ClCompile Include="game\engine\Controls\ControlImage.cpp" />
+    <ClCompile Include="game\engine\Controls\ControlLine.cpp" />
+    <ClCompile Include="game\engine\controls\ControlManager.cpp" />
+    <ClCompile Include="game\engine\Controls\ControlPanel.cpp" />
+    <ClCompile Include="game\engine\Controls\ControlComponentScroll.cpp" />
+    <ClCompile Include="game\engine\Controls\ControlRect.cpp" />
+    <ClCompile Include="game\engine\Controls\ControlTapScene.cpp" />
+    <ClCompile Include="game\engine\Controls\ControlText.cpp" />
+    <ClCompile Include="game\engine\Controls\LoaderControlManager.cpp" />
+    <ClCompile Include="game\engine\Core\Animators\ColorAnimator.cpp" />
+    <ClCompile Include="game\engine\Core\Animators\LineAnimator.cpp" />
+    <ClCompile Include="game\engine\Core\Animators\RotateAnimator.cpp" />
+    <ClCompile Include="game\engine\Core\Animators\ScaleAnimator.cpp" />
+    <ClCompile Include="game\engine\Core\Animators\SplineAnimator.cpp" />
+    <ClCompile Include="game\engine\Core\Animators\TextureAnimator.cpp" />
+    <ClCompile Include="game\engine\Core\Array\SceneNodeArray.cpp" />
+    <ClCompile Include="game\engine\Core\Base.cpp" />
+    <ClCompile Include="game\engine\Core\Event.cpp" />
+    <ClCompile Include="game\engine\Core\FileUtility.cpp" />
+    <ClCompile Include="game\engine\Core\GeometryWorker.cpp" />
+    <ClCompile Include="game\engine\Core\Geometry\Circle.cpp" />
+    <ClCompile Include="game\engine\Core\Geometry\Spline.cpp" />
+    <ClCompile Include="game\engine\Core\NodeWorker.cpp" />
+    <ClCompile Include="game\engine\Core\Parameter.cpp" />
+    <ClCompile Include="game\engine\Core\Parsers\ParserExpression.cpp" />
+    <ClCompile Include="game\engine\Core\Parsers\ParserAS.cpp" />
+    <ClCompile Include="game\engine\Core\Parsers\Scriptarray.cpp" />
+    <ClCompile Include="game\engine\Core\Parsers\ScriptCache.cpp" />
+    <ClCompile Include="game\engine\Core\Parsers\Scriptstdstring.cpp" />
+    <ClCompile Include="game\engine\Core\Parsers\Scriptvector3df.cpp" />
+    <ClCompile Include="game\engine\Core\ParticleAffectors\ParticleAffectorAllDirection.cpp" />
+    <ClCompile Include="game\engine\Core\ParticleAffectors\ParticleAffectorColor.cpp" />
+    <ClCompile Include="game\engine\Core\ParticleAffectors\ParticleAffectorEmmiterParam.cpp" />
+    <ClCompile Include="game\engine\Core\ParticleAffectors\ParticleAffectorScale.cpp" />
+    <ClCompile Include="game\engine\Core\ParticleEmmitors\ParticleBoxEmitter.cpp" />
+    <ClCompile Include="game\engine\Core\Randomizer.cpp" />
+    <ClCompile Include="game\engine\Core\Reciver.cpp" />
+    <ClCompile Include="game\engine\Core\Scene\Billboard.cpp" />
+    <ClCompile Include="game\engine\Core\Scene\PolylineSceneNode.cpp" />
+    <ClCompile Include="game\engine\Core\Scene\SceneText.cpp" />
+    <ClCompile Include="game\engine\Core\Scene\UVAnimatedPlane.cpp" />
+    <ClCompile Include="game\engine\Core\TextureLoaders\CPVRImage.cpp" />
+    <ClCompile Include="game\engine\Core\TextureLoaders\PVRTextureLoader.cpp" />
+    <ClCompile Include="game\engine\Core\TextureWorker.cpp" />
+    <ClCompile Include="game\engine\Core\TimerBase.cpp" />
+    <ClCompile Include="game\engine\Core\UserSettings.cpp" />
+    <ClCompile Include="game\engine\Core\Xml\XMLCache.cpp" />
+    <ClCompile Include="game\engine\Core\Xml\XMLFileDocument.cpp" />
+    <ClCompile Include="game\engine\Core\Xml\XMLHelper.cpp" />
+    <ClCompile Include="game\engine\Flurry\FlurryManager.cpp" />
+    <ClCompile Include="game\engine\InAppPurchases\InAppPurchases.cpp" />
+    <ClCompile Include="game\engine\ModuleManager.cpp" />
+    <ClCompile Include="game\engine\ParserExtensions\ParserExtensionCommon.cpp" />
+    <ClCompile Include="game\engine\ParserExtensions\ParserExtensionControls.cpp" />
+    <ClCompile Include="game\engine\ParserExtensions\ParserExtensionUnits.cpp" />
+    <ClCompile Include="game\engine\RateApp\RateAppManager.cpp" />
+    <ClCompile Include="game\engine\Sounds\SoundManager.cpp" />
+    <ClCompile Include="game\engine\Sounds\SoundMusic.cpp" />
+    <ClCompile Include="game\engine\Sounds\SoundResources.cpp" />
+    <ClCompile Include="game\engine\Sounds\SoundSource.cpp" />
+    <ClCompile Include="game\engine\Sounds\WavFileReader.cpp" />
+    <ClCompile Include="game\engine\Stage\Debug\DebugInfo.cpp" />
+    <ClCompile Include="game\engine\Stage\Debug\DebugNode.cpp" />
+    <ClCompile Include="game\engine\Stage\Debug\DebugReciver.cpp" />
+    <ClCompile Include="game\engine\Stage\Debug\DebugSettings.cpp" />
+    <ClCompile Include="game\engine\stage\loaders\LoaderBehaviors.cpp" />
+    <ClCompile Include="game\engine\Stage\Loaders\LoaderCommon.cpp" />
+    <ClCompile Include="game\engine\Stage\Loaders\LoaderDataGetters.cpp" />
+    <ClCompile Include="game\engine\Stage\Loaders\LoaderUnitSelectSceneNode.cpp" />
+    <ClCompile Include="game\engine\stage\loaders\LoaderUnitGenInstance.cpp" />
+    <ClCompile Include="game\engine\Stage\Paths\FinderGrid.cpp" />
+    <ClCompile Include="game\engine\Stage\Paths\AroundPointFinder.cpp" />
+    <ClCompile Include="game\engine\Stage\Paths\PathAnimator.cpp" />
+    <ClCompile Include="game\engine\Stage\Paths\PathFinder.cpp" />
+    <ClCompile Include="game\engine\Stage\Paths\PathSceneNodeAnimator.cpp" />
+    <ClCompile Include="game\engine\stage\StageManager.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenFollowToNode.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenStatic.cpp" />
+    <ClCompile Include="game\engine\stage\unitGenInstance\UnitCreationBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitCreationBBox.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitCreationDistance.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitCreationGlobalParameters.cpp" />
+    <ClCompile Include="game\engine\stage\unitGenInstance\UnitCreationTimer.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceBillboard.cpp" />
+    <ClCompile Include="game\engine\stage\unitGenInstance\UnitGenInstanceBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceCamera.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceEmpty.cpp" />
+    <ClCompile Include="game\engine\stage\unitGenInstance\UnitGenInstanceEnv.cpp" />
+    <ClCompile Include="game\engine\stage\unitGenInstance\UnitGenInstanceStandard.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorFollowToNode.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorStatic.cpp" />
+    <ClCompile Include="game\engine\stage\unitInstance\UnitInstanceBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitInstance\UnitInstanceBillboard.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitInstance\UnitInstanceCamera.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitInstance\UnitInstanceEmpty.cpp" />
+    <ClCompile Include="game\engine\stage\unitInstance\UnitInstanceEnv.cpp" />
+    <ClCompile Include="game\engine\stage\unitInstance\UnitInstanceStandard.cpp" />
+    <ClCompile Include="game\engine\stage\UnitManager.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\DataGetters\DataGetterBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\DataGetters\DataGetterDistance.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\DataGetters\DataGetterId.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\DataGetters\DataGetterTapControl.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitActionUpdater.cpp" />
+    <ClCompile Include="game\engine\stage\unitPart\UnitAnimation.cpp" />
+    <ClCompile Include="game\engine\stage\unitPart\UnitAction.cpp" />
+    <ClCompile Include="game\engine\stage\unitPart\UnitBehavior.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitBlockAction.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitBreak\UnitActionBreak.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitClause.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventActionEnd.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventAnimation.cpp" />
+    <ClCompile Include="game\engine\stage\unitPart\unitEvent\UnitEventBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventChildUnit.cpp" />
+    <ClCompile Include="game\engine\stage\unitPart\unitEvent\UnitEventControlButton.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventControlCircle.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventControlTapScene.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventDistance.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventOperator.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventScript.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventSelection.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventTimer.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteAddNextAction.cpp" />
+    <ClCompile Include="game\engine\stage\unitPart\unitExecute\ExecuteBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteChangeSceneNodeId.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteColor.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteCreateUnit.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteSelf.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteUnit.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteUnitsAll.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteExtAction.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteExtParameter.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteGroup.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMappingTransform.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMaterial.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMoveToPoint.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMoveToSceneNode.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParameter.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParticleAffector.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParticleEmitter.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteRotation.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteScript.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteSetData.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteSound.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTextures.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTimer.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTransform.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorRotation.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorScale.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExtActionDescription.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorAllDirection.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorEmmiterParam.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorFadeOut.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleEmitterBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleEmitterBox.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitExprParameter.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitMapping\UnitMappingBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitMapping\UnitMappingTransform.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelAnim.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelBillboard.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelEmpty.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelParticleSystem.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelSphere.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitModels\UnitModelVolumeLight.cpp" />
+    <ClCompile Include="game\engine\stage\unitPart\UnitParameters.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeBase.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeData.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeDistance.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeId.cpp" />
+    <ClCompile Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeTapControl.cpp" />
+    <ClCompile Include="game\engine\TestFlight\TestFlightManager.cpp" />
+    <ClCompile Include="game\engine\UserSettings\UserSettingsWorker.cpp" />
+    <ClCompile Include="game\Modules\ModuleFly.cpp" />
+    <ClCompile Include="game\Modules\ModuleTapAndShot.cpp" />
+    <ClCompile Include="game\Modules\ModuleEndGame.cpp" />
+    <ClCompile Include="game\Modules\ModuleFightControl.cpp" />
+    <ClCompile Include="game\Modules\ModuleHelper.cpp" />
+    <ClCompile Include="game\Modules\ModuleMainMenu.cpp" />
+    <ClCompile Include="game\Modules\ModuleMarket.cpp" />
+    <ClCompile Include="game\Modules\ModuleStandardControl.cpp" />
+    <ClCompile Include="game\Modules\ModuleTranslate.cpp" />
+    <ClCompile Include="game\Modules\ModuleTutorial1.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="game\engine\Manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game\engine\Ad\AdManager.h" />
+    <ClInclude Include="game\engine\Controls\ControlBehavior.h" />
+    <ClInclude Include="game\engine\controls\ControlButton.h" />
+    <ClInclude Include="game\engine\Controls\ControlCircle.h" />
+    <ClInclude Include="game\engine\controls\ControlEvent.h" />
+    <ClInclude Include="game\engine\Controls\ControlImage.h" />
+    <ClInclude Include="game\engine\Controls\ControlLine.h" />
+    <ClInclude Include="game\engine\controls\ControlManager.h" />
+    <ClInclude Include="game\engine\Controls\ControlPackage.h" />
+    <ClInclude Include="game\engine\Controls\ControlPanel.h" />
+    <ClInclude Include="game\engine\Controls\ControlComponentScroll.h" />
+    <ClInclude Include="game\engine\Controls\ControlRect.h" />
+    <ClInclude Include="game\engine\Controls\ControlTapScene.h" />
+    <ClInclude Include="game\engine\Controls\ControlText.h" />
+    <ClInclude Include="game\engine\controls\IControl.h" />
+    <ClInclude Include="game\engine\Controls\IControlComponent.h" />
+    <ClInclude Include="game\engine\Controls\LoaderControlManager.h" />
+    <ClInclude Include="game\engine\Core\Animators\ColorAnimator.h" />
+    <ClInclude Include="game\engine\Core\Animators\IExtendAnimator.h" />
+    <ClInclude Include="game\engine\Core\Animators\LineAnimator.h" />
+    <ClInclude Include="game\engine\Core\Animators\RotateAnimator.h" />
+    <ClInclude Include="game\engine\Core\Animators\ScaleAnimator.h" />
+    <ClInclude Include="game\engine\Core\Animators\SplineAnimator.h" />
+    <ClInclude Include="game\engine\Core\Animators\TextureAnimator.h" />
+    <ClInclude Include="game\engine\Core\Array\SceneNodeArray.h" />
+    <ClInclude Include="game\engine\Core\Base.h" />
+    <ClInclude Include="game\engine\Core\CompareType.h" />
+    <ClInclude Include="game\engine\Core\Event.h" />
+    <ClInclude Include="game\engine\Core\FileUtility.h" />
+    <ClInclude Include="game\engine\Core\GeometryWorker.h" />
+    <ClInclude Include="game\engine\Core\Geometry\Circle.h" />
+    <ClInclude Include="game\engine\Core\Geometry\Spline.h" />
+    <ClInclude Include="game\engine\Core\ICoreNode.h" />
+    <ClInclude Include="game\engine\Core\NodeWorker.h" />
+    <ClInclude Include="game\engine\Core\OperatorType.h" />
+    <ClInclude Include="game\engine\Core\Parameter.h" />
+    <ClInclude Include="game\engine\Core\Parsers\ParserExpression.h" />
+    <ClInclude Include="game\engine\Core\Parsers\ParserAS.h" />
+    <ClInclude Include="game\engine\Core\Parsers\ParserUserData.h" />
+    <ClInclude Include="game\engine\Core\Parsers\Scriptarray.h" />
+    <ClInclude Include="game\engine\Core\Parsers\ScriptCache.h" />
+    <ClInclude Include="game\engine\Core\Parsers\Scriptstdstring.h" />
+    <ClInclude Include="game\engine\Core\Parsers\Scriptvector3df.h" />
+    <ClInclude Include="game\engine\Core\ParticleAffectors\ParticleAffectorAllDirection.h" />
+    <ClInclude Include="game\engine\Core\ParticleAffectors\ParticleAffectorColor.h" />
+    <ClInclude Include="game\engine\Core\ParticleAffectors\ParticleAffectorEmmiterParam.h" />
+    <ClInclude Include="game\engine\Core\ParticleAffectors\ParticleAffectorScale.h" />
+    <ClInclude Include="game\engine\Core\ParticleEmmitors\ParticleBoxEmitter.h" />
+    <ClInclude Include="game\engine\Core\Randomizer.h" />
+    <ClInclude Include="game\engine\Core\Reciver.h" />
+    <ClInclude Include="game\engine\Core\Scene\Billboard.h" />
+    <ClInclude Include="game\engine\Core\Scene\PolylineSceneNode.h" />
+    <ClInclude Include="game\engine\Core\Scene\SceneText.h" />
+    <ClInclude Include="game\engine\Core\Scene\UVAnimatedPlane.h" />
+    <ClInclude Include="game\engine\Core\TextureLoaders\CPVRImage.h" />
+    <ClInclude Include="game\engine\Core\TextureLoaders\PVRTextureLoader.h" />
+    <ClInclude Include="game\engine\Core\TextureWorker.h" />
+    <ClInclude Include="game\engine\Core\TimerBase.h" />
+    <ClInclude Include="game\engine\Core\UserSettings.h" />
+    <ClInclude Include="game\engine\Core\Xml\RapidXML\rapidxml.h" />
+    <ClInclude Include="game\engine\Core\Xml\RapidXML\rapidxml_iterators.h" />
+    <ClInclude Include="game\engine\Core\Xml\RapidXML\rapidxml_print.h" />
+    <ClInclude Include="game\engine\Core\Xml\RapidXML\rapidxml_utils.h" />
+    <ClInclude Include="game\engine\Core\Xml\XMLCache.h" />
+    <ClInclude Include="game\engine\Core\Xml\XMLFileDocument.h" />
+    <ClInclude Include="game\engine\Core\Xml\XMLHelper.h" />
+    <ClInclude Include="game\engine\Flurry\FlurryManager.h" />
+    <ClInclude Include="game\engine\IModule.h" />
+    <ClInclude Include="game\engine\InAppPurchases\InAppPurchases.h" />
+    <ClInclude Include="game\engine\InAppPurchases\InAppStatus.h" />
+    <ClInclude Include="game\engine\ManagerEvents.h" />
+    <ClInclude Include="game\engine\ModuleManager.h" />
+    <ClInclude Include="game\engine\ParserExtensions\ParserExtensionCommon.h" />
+    <ClInclude Include="game\engine\ParserExtensions\ParserExtensionControls.h" />
+    <ClInclude Include="game\engine\ParserExtensions\ParserExtensionUnits.h" />
+    <ClInclude Include="game\engine\RateApp\RateAppManager.h" />
+    <ClInclude Include="game\engine\Sounds\ISound.h" />
+    <ClInclude Include="game\engine\Sounds\SoundManager.h" />
+    <ClInclude Include="game\engine\Sounds\SoundMusic.h" />
+    <ClInclude Include="game\engine\Sounds\SoundResources.h" />
+    <ClInclude Include="game\engine\Sounds\SoundSource.h" />
+    <ClInclude Include="game\engine\Sounds\WavFileReader.h" />
+    <ClInclude Include="game\engine\Stage\Debug\DebugInfo.h" />
+    <ClInclude Include="game\engine\Stage\Debug\DebugNode.h" />
+    <ClInclude Include="game\engine\Stage\Debug\DebugReciver.h" />
+    <ClInclude Include="game\engine\Stage\Debug\DebugSettings.h" />
+    <ClInclude Include="game\engine\stage\loaders\LoaderBehaviors.h" />
+    <ClInclude Include="game\engine\Stage\Loaders\LoaderCommon.h" />
+    <ClInclude Include="game\engine\Stage\Loaders\LoaderDataGetters.h" />
+    <ClInclude Include="game\engine\Stage\Loaders\LoaderUnitSelectSceneNode.h" />
+    <ClInclude Include="game\engine\stage\loaders\LoaderUnitGenInstance.h" />
+    <ClInclude Include="game\engine\Stage\Paths\FinderGrid.h" />
+    <ClInclude Include="game\engine\Stage\Paths\FinderNode.h" />
+    <ClInclude Include="game\engine\Stage\Paths\AroundPointFinder.h" />
+    <ClInclude Include="game\engine\Stage\Paths\PathAnimator.h" />
+    <ClInclude Include="game\engine\Stage\Paths\PathFinder.h" />
+    <ClInclude Include="game\engine\Stage\Paths\PathSceneNodeAnimator.h" />
+    <ClInclude Include="game\engine\stage\StageManager.h" />
+    <ClInclude Include="game\engine\Stage\StageManagerEvents.h" />
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenFollowToNode.h" />
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\CameraGen\CameraGenStatic.h" />
+    <ClInclude Include="game\engine\stage\unitGenInstance\UnitCreationBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitCreationBBox.h" />
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitCreationDistance.h" />
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitCreationGlobalParameters.h" />
+    <ClInclude Include="game\engine\stage\unitGenInstance\UnitCreationTimer.h" />
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceBillboard.h" />
+    <ClInclude Include="game\engine\stage\unitGenInstance\UnitGenInstanceBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceCamera.h" />
+    <ClInclude Include="game\engine\Stage\UnitGenInstance\UnitGenInstanceEmpty.h" />
+    <ClInclude Include="game\engine\stage\unitGenInstance\UnitGenInstanceEnv.h" />
+    <ClInclude Include="game\engine\stage\unitGenInstance\UnitGenInstanceStandard.h" />
+    <ClInclude Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorFollowToNode.h" />
+    <ClInclude Include="game\engine\Stage\UnitInstance\CameraBehavior\CameraBehaviorStatic.h" />
+    <ClInclude Include="game\engine\stage\unitInstance\UnitInstanceBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitInstance\UnitInstanceBillboard.h" />
+    <ClInclude Include="game\engine\Stage\UnitInstance\UnitInstanceCamera.h" />
+    <ClInclude Include="game\engine\Stage\UnitInstance\UnitInstanceEmpty.h" />
+    <ClInclude Include="game\engine\stage\unitInstance\UnitInstanceEnv.h" />
+    <ClInclude Include="game\engine\stage\unitInstance\UnitInstanceStandard.h" />
+    <ClInclude Include="game\engine\stage\UnitManager.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\DataGetters\DataGetterBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\DataGetters\DataGetterDistance.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\DataGetters\DataGetterId.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\DataGetters\DataGetterTapControl.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitActionUpdater.h" />
+    <ClInclude Include="game\engine\stage\unitPart\UnitAnimation.h" />
+    <ClInclude Include="game\engine\stage\unitPart\UnitAction.h" />
+    <ClInclude Include="game\engine\stage\unitPart\UnitBehavior.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitBlockAction.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitBreak\UnitActionBreak.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitClause.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventActionEnd.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventAnimation.h" />
+    <ClInclude Include="game\engine\stage\unitPart\unitEvent\UnitEventBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventChildUnit.h" />
+    <ClInclude Include="game\engine\stage\unitPart\unitEvent\UnitEventControlButton.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventControlCircle.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventControlTapScene.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventDistance.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventOperator.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventScript.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventSelection.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventTimer.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitEvent\UnitEventType.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteAddNextAction.h" />
+    <ClInclude Include="game\engine\stage\unitPart\unitExecute\ExecuteBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteChangeSceneNodeId.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteColor.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteCreateUnit.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteSelf.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteUnit.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteDeleteUnitsAll.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteExtAction.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteExtParameter.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteGroup.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMappingTransform.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMaterial.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMoveToPoint.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteMoveToSceneNode.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParameter.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParticleAffector.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteParticleEmitter.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteRotation.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteScript.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteSetData.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteSound.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTextures.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTimer.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExecuteTransform.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorRotation.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorScale.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExtActionDescription.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorAllDirection.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorEmmiterParam.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleAffectorFadeOut.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleEmitterBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExecute\ExParticleEmitterBox.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitExprParameter.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitMapping\UnitMappingBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitMapping\UnitMappingTransform.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelAnim.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelBillboard.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelEmpty.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelParticleSystem.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelSphere.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitModels\UnitModelVolumeLight.h" />
+    <ClInclude Include="game\engine\stage\unitPart\UnitParameters.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeBase.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeData.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeDistance.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeId.h" />
+    <ClInclude Include="game\engine\Stage\UnitPart\UnitSelectSceneNodes\UnitSelectSceneNodeTapControl.h" />
+    <ClInclude Include="game\engine\TestFlight\TestFlightManager.h" />
+    <ClInclude Include="game\engine\UserSettings\UserSettingsWorker.h" />
+    <ClInclude Include="game\include\Animation.h" />
+    <ClInclude Include="game\include\configureCompile.h" />
+    <ClInclude Include="game\include\defs.h" />
+    <ClInclude Include="game\include\global.h" />
+    <ClInclude Include="game\engine\Manager.h" />
+    <ClInclude Include="game\Modules\ModuleFly.h" />
+    <ClInclude Include="game\Modules\ModuleTapAndShot.h" />
+    <ClInclude Include="game\Modules\ModuleEndGame.h" />
+    <ClInclude Include="game\Modules\ModuleFightControl.h" />
+    <ClInclude Include="game\Modules\ModuleHelper.h" />
+    <ClInclude Include="game\Modules\ModuleMainMenu.h" />
+    <ClInclude Include="game\Modules\ModuleMarket.h" />
+    <ClInclude Include="game\Modules\ModuleStandardControl.h" />
+    <ClInclude Include="game\Modules\ModuleTranslate.h" />
+    <ClInclude Include="game\Modules\ModuleTutorial1.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="game\engine\Ad\AdManager.mm" />
+    <None Include="game\engine\Flurry\FlurryManager.mm" />
+    <None Include="game\engine\InAppPurchases\InAppPurchases.mm" />
+    <None Include="game\engine\RateApp\RateAppManager.mm" />
+    <None Include="game\engine\Sounds\SoundManager.mm" />
+    <None Include="game\engine\TestFlight\TestFlightManager.mm" />
+    <None Include="game\engine\UserSettings\UserSettingsWorker.mm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

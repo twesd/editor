@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="IrrlichtCLR">
+</Property><Property Name="Solution File" Value="C:\_Work_\MainProject\Editor\IrrlichtCLR\IrrlichtCLR.sln">
+</Property><Property Name="User Options File" Value="C:\_Work_\MainProject\Editor\IrrlichtCLR\IrrlichtCLR.suo">
+</Property><Property Name="Date" Value="26 января 2012 г.">
+</Property><Property Name="Time" Value="0:51">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="IrrlichtCLR.sln" Description="File successfully backed up as C:\_Work_\MainProject\Editor\IrrlichtCLR\IrrlichtCLR.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="IrrlichtCLR.suo" Description="File successfully backed up as C:\_Work_\MainProject\Editor\IrrlichtCLR\IrrlichtCLR.suo.old">
+</Event><Event ErrorLevel="0" Project="IrrlichtCLR" Source="IrrlichtCLR.vcproj" Description="Converting project file 'C:\_Work_\MainProject\Editor\IrrlichtCLR\IrrlichtCLR.vcproj'.">
+</Event><Event ErrorLevel="1" Project="IrrlichtCLR" Source="IrrlichtCLR.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="IrrlichtCLR" Source="IrrlichtCLR.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="IrrlichtCLR" Source="IrrlichtCLR.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="IrrlichtCLR" Source="IrrlichtCLR.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="IrrlichtCLR" Source="IrrlichtCLR.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="IrrlichtCLR" Source="IrrlichtCLR.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="IrrlichtCLR" Source="IrrlichtCLR.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="IrrlichtCLR" Source="IrrlichtCLR.vcproj" Description="Done converting to new project file 'C:\_Work_\MainProject\Editor\IrrlichtCLR\IrrlichtCLR.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="IrrlichtCLR" Source="IrrlichtCLR.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="IrrlichtCLR.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="IrrlichtCLR.sln" Description="Converted">
+</Event></UpgradeLog>

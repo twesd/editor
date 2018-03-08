@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48B59B6E-FA35-4938-8243-65E265E06320}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnitEngineUI</RootNamespace>
+    <AssemblyName>UnitEngineUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\UnitEngineUI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\UnitEngineUI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aga.Controls, Version=1.7.0.0, Culture=neutral, PublicKeyToken=fcc90fbf924463a3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Aga.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox, Version=2.7.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="IrrlichtCLR, Version=1.0.4404.42258, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IrrlichtCLR\Debug\IrrlichtCLR.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\Library\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ContextMenus\ContextMenuExecutes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlAnimation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlAnimation.Designer.cs">
+      <DependentUpon>ControlAnimation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlAnimationList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlAnimationList.Designer.cs">
+      <DependentUpon>ControlAnimationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlClauseBreak.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlClauseBreak.designer.cs">
+      <DependentUpon>ControlClauseBreak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlClauseExecute.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlClauseExecute.Designer.cs">
+      <DependentUpon>ControlClauseExecute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlExecuteGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlExecuteGroup.Designer.cs">
+      <DependentUpon>ControlExecuteGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlExecuteScript.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlExecuteScript.Designer.cs">
+      <DependentUpon>ControlExecuteScript.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlExecuteSetData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlExecuteSetData.Designer.cs">
+      <DependentUpon>ControlExecuteSetData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlMaterial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlMaterial.designer.cs">
+      <DependentUpon>ControlMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlTextures.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlTextures.Designer.cs">
+      <DependentUpon>ControlTextures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlClauseParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlClauseParams.Designer.cs">
+      <DependentUpon>ControlClauseParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlUnitCreate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlUnitCreate.Designer.cs">
+      <DependentUpon>ControlUnitCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlExecuteParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlExecuteParams.Designer.cs">
+      <DependentUpon>ControlExecuteParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlUnitDelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlUnitDelete.designer.cs">
+      <DependentUpon>ControlUnitDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlUnitModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlUnitModel.Designer.cs">
+      <DependentUpon>ControlUnitModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlParticleAffector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlParticleAffector.Designer.cs">
+      <DependentUpon>ControlParticleAffector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlExecuteColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlExecuteColor.Designer.cs">
+      <DependentUpon>ControlExecuteColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorBehavior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorBehavior.designer.cs">
+      <DependentUpon>EditorBehavior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorBehaviorInspector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorBehaviorInspector.Designer.cs">
+      <DependentUpon>EditorBehaviorInspector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorBehaviorItemProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorBehaviorItemProperty.Designer.cs">
+      <DependentUpon>EditorBehaviorItemProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorBehaviorIrrDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorBehaviorIrrDocument.Designer.cs">
+      <DependentUpon>EditorBehaviorIrrDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nodes\TreeNodeAnimation.cs" />
+    <Compile Include="XRefBehaviorWorker.cs" />
+    <Compile Include="Events\ControlEventControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Events\ControlEventControlBase.Designer.cs">
+      <DependentUpon>ControlEventControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ControlEventControlButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Events\ControlEventControlButton.Designer.cs">
+      <DependentUpon>ControlEventControlButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ControlEventControlTapScene.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Events\ControlEventControlTapScene.Designer.cs">
+      <DependentUpon>ControlEventControlTapScene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\ControlEventTimer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Events\ControlEventTimer.Designer.cs">
+      <DependentUpon>ControlEventTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlTransforms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlTransforms.Designer.cs">
+      <DependentUpon>ControlTransforms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransformWorker.cs" />
+    <Compile Include="Nodes\TreeNodeAction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ControlAnimation.resx">
+      <DependentUpon>ControlAnimation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlAnimationList.resx">
+      <DependentUpon>ControlAnimationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlClauseBreak.resx">
+      <DependentUpon>ControlClauseBreak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlClauseExecute.resx">
+      <DependentUpon>ControlClauseExecute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlExecuteGroup.resx">
+      <DependentUpon>ControlExecuteGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlExecuteScript.resx">
+      <DependentUpon>ControlExecuteScript.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlExecuteSetData.resx">
+      <DependentUpon>ControlExecuteSetData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlMaterial.resx">
+      <DependentUpon>ControlMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlTextures.resx">
+      <DependentUpon>ControlTextures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlClauseParams.resx">
+      <DependentUpon>ControlClauseParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlUnitCreate.resx">
+      <DependentUpon>ControlUnitCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlExecuteParams.resx">
+      <DependentUpon>ControlExecuteParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlUnitDelete.resx">
+      <DependentUpon>ControlUnitDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlUnitModel.resx">
+      <DependentUpon>ControlUnitModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlParticleAffector.resx">
+      <DependentUpon>ControlParticleAffector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlExecuteColor.resx">
+      <DependentUpon>ControlExecuteColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorBehavior.resx">
+      <DependentUpon>EditorBehavior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorBehaviorInspector.resx">
+      <DependentUpon>EditorBehaviorInspector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorBehaviorItemProperty.resx">
+      <DependentUpon>EditorBehaviorItemProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorBehaviorIrrDocument.resx">
+      <DependentUpon>EditorBehaviorIrrDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Events\ControlEventControlBase.resx">
+      <DependentUpon>ControlEventControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Events\ControlEventControlButton.resx">
+      <DependentUpon>ControlEventControlButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Events\ControlEventControlTapScene.resx">
+      <DependentUpon>ControlEventControlTapScene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Events\ControlEventTimer.resx">
+      <DependentUpon>ControlEventTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlTransforms.resx">
+      <DependentUpon>ControlTransforms.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonUI\CommonUI.csproj">
+      <Project>{763AF3D5-2D58-4541-A99C-BF8BBA35DC61}</Project>
+      <Name>CommonUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{2E80130C-8943-4A43-8ED0-6378047ABB79}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IrrlichtWrap\IrrlichtWrap.csproj">
+      <Project>{6FD8FD88-D712-470E-A3B8-1E046A512B46}</Project>
+      <Name>IrrlichtWrap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IrrTools\IrrTools.csproj">
+      <Project>{9CCA8150-1F4D-498F-9C1D-2D32B2C115A7}</Project>
+      <Name>IrrTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Serializable\Serializable.csproj">
+      <Project>{88D5FE46-FD79-4F62-98A5-C18CC28E26C0}</Project>
+      <Name>Serializable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransactionCore\TransactionCore.csproj">
+      <Project>{7076DF58-B571-4611-A357-EFCC4E332A5A}</Project>
+      <Name>TransactionCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnitEngine\UnitEngine.csproj">
+      <Project>{0F0CDF35-2A2F-4237-8669-432CD4E0FB8C}</Project>
+      <Name>UnitEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbox1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XRef.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overlayAdd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overlayChange.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rect-white.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

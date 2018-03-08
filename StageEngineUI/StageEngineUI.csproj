@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{131FDB17-89BA-4269-BF4E-77068677DBFF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StageEngineUI</RootNamespace>
+    <AssemblyName>StageEngineUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\StageEngineUI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\StageEngineUI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aga.Controls, Version=1.7.0.0, Culture=neutral, PublicKeyToken=fcc90fbf924463a3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Aga.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\Library\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="IrrlichtCLR">
+      <HintPath>..\IrrlichtCLR\Debug\IrrlichtCLR.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\Library\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Camera\StageCameraWorker.cs" />
+    <Compile Include="Controls\ControlEditingCameraBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlEditingCameraBase.Designer.cs">
+      <DependentUpon>ControlEditingCameraBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlPathsEditing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlPathsEditing.Designer.cs">
+      <DependentUpon>ControlPathsEditing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Nodes\TreeNodePackage.cs" />
+    <Compile Include="Nodes\TreeNodeToolboxUnit.cs" />
+    <Compile Include="NodeWorkerEx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ControlManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlManager.Designer.cs">
+      <DependentUpon>ControlManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creations\ControlUnitCreationTimer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Creations\ControlUnitCreationTimer.Designer.cs">
+      <DependentUpon>ControlUnitCreationTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorStage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorStage.Designer.cs">
+      <DependentUpon>EditorStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorStageInspector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorStageInspector.Designer.cs">
+      <DependentUpon>EditorStageInspector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorStageIrrDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorStageIrrDocument.Designer.cs">
+      <DependentUpon>EditorStageIrrDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorStageProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorStageProperty.Designer.cs">
+      <DependentUpon>EditorStageProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorStageToolboxUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorStageToolboxUnits.Designer.cs">
+      <DependentUpon>EditorStageToolboxUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Nodes\TreeNodeInstance.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ControlManager.resx">
+      <DependentUpon>ControlManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlEditingCameraBase.resx">
+      <DependentUpon>ControlEditingCameraBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlPathsEditing.resx">
+      <DependentUpon>ControlPathsEditing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creations\ControlUnitCreationTimer.resx">
+      <DependentUpon>ControlUnitCreationTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorStage.resx">
+      <DependentUpon>EditorStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorStageInspector.resx">
+      <DependentUpon>EditorStageInspector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorStageIrrDocument.resx">
+      <DependentUpon>EditorStageIrrDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorStageProperty.resx">
+      <DependentUpon>EditorStageProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorStageToolboxUnits.resx">
+      <DependentUpon>EditorStageToolboxUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonUI\CommonUI.csproj">
+      <Project>{763AF3D5-2D58-4541-A99C-BF8BBA35DC61}</Project>
+      <Name>CommonUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{2E80130C-8943-4A43-8ED0-6378047ABB79}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControlEngine\ControlEngine.csproj">
+      <Project>{8E90E0FB-6D7C-47E9-8774-25B1E39CD316}</Project>
+      <Name>ControlEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IrrlichtWrap\IrrlichtWrap.csproj">
+      <Project>{6FD8FD88-D712-470E-A3B8-1E046A512B46}</Project>
+      <Name>IrrlichtWrap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IrrTools\IrrTools.csproj">
+      <Project>{9CCA8150-1F4D-498F-9C1D-2D32B2C115A7}</Project>
+      <Name>IrrTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Serializable\Serializable.csproj">
+      <Project>{88D5FE46-FD79-4F62-98A5-C18CC28E26C0}</Project>
+      <Name>Serializable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StageEngine\StageEngine.csproj">
+      <Project>{2C5AC5F5-3151-4C33-A7C9-66609AD0D3FF}</Project>
+      <Name>StageEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransactionCore\TransactionCore.csproj">
+      <Project>{7076DF58-B571-4611-A357-EFCC4E332A5A}</Project>
+      <Name>TransactionCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnitEngine\UnitEngine.csproj">
+      <Project>{0F0CDF35-2A2F-4237-8669-432CD4E0FB8C}</Project>
+      <Name>UnitEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\none.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Validate\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item.ico" />
+    <None Include="Resources\folder.ico" />
+    <None Include="Resources\overlaySet.ico" />
+    <None Include="Resources\controlPackage.ico" />
+    <None Include="Resources\home.ico" />
+    <None Include="Resources\attribute-p.ico" />
+    <None Include="Resources\event.ico" />
+    <Content Include="Textures\instanceEmpty.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\instanceCamera.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\instanceArea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
