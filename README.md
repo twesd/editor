@@ -1,6 +1,6 @@
 # Game Editor and Client for iOS
 
-Editor for create games.
+Editor design to create games for iOS games.
 
 Client lang: C++
 Editor lang: C#
